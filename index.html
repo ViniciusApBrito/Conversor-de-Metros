@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de medidas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <div class="container mt-3">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <h1 class="text-center mb-3">Conversor de Metros</h1>
+
+          <form class="row g-2">
+            <div class="col-md-6">
+              <input class="form-control form-control-sm mb-2" id="valor" type="text" placeholder="Valor">
+            </div>
+            <div class="col-md-6">
+              <select class="form-select form-select-lg mb-2" id="converter">
+                <option value="Quilometro">Quilômetros</option>
+                <option value="Centimetro">Centímetros</option>
+                <option value="Milimetro">Milímetros</option>
+                <option value="Milha">Milhas</option>
+                <option value="Jarda">Jardas</option>
+                <option value="Pe">Pés</option>
+                <option value="Polegada">Polegadas</option>
+                <option value="Milha_Nautica">Milhas náuticas</option>
+              </select>
+            </div>
+            <div class="col-md-12 text-center">
+              <button class="btn btn-dark mb-2" type="button" onclick="calculo()">Calcular</button>
+              <input class="form-control form-control-sm mb-2" id="resultado" type="text" disabled>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  </body>
+</html>
